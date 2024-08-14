@@ -2159,6 +2159,9 @@ color: #555;
     color: white;
 }
 
+
+
+
 /* Container for the form */
 .form-container {
     display: flex;
@@ -2197,34 +2200,6 @@ textarea {
     resize: vertical;
 }
 
-.file-upload {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.file-upload input[type="file"] {
-    display: none;
-}
-
-.file-upload label {
-    display: inline-block;
-    background-color: #ccc;
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.file-upload label:hover {
-    background-color: var(--mid-blue);
-    color: white;
-}
-
-.file-upload span {
-    color: var(--dark-blue);
-    text-decoration: underline;
-}
 
 
 
