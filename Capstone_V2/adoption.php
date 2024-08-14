@@ -243,7 +243,132 @@ include("config/config.php");
     </div>
 </div>
 
+    <div class="form-section" id="step5">
+        <h3>QUESTIONNAIRE</h3>
 
+        <div class="form-group">
+            <label for="pet-care">Who will look after your pet if you go on vacation or in case of emergency? <span class="required">*</span></label>
+            <input type="text" id="pet-care" name="pet-care" required>
+        </div>
+
+        <div class="form-group">
+            <label for="workday-hours">How many hours in an average workday will your pet be left alone? <span class="required">*</span></label>
+            <input type="text" id="workday-hours" name="workday-hours" required>
+        </div>
+
+        <div class="form-group">
+            <label for="new-surroundings">What steps will you take to introduce your new pet to his/her new surroundings? <span class="required">*</span></label>
+            <textarea id="new-surroundings" name="new-surroundings" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="family-support">Does everyone in the family support your decision to adopt a pet? <span class="required">*</span></label>
+            <div class="form-options">
+                <label><input type="radio" name="family-support" value="yes" required> Yes</label>
+                <label><input type="radio" name="family-support" value="no"> No</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="family-support-explanation">Please explain <span class="required">*</span></label>
+            <textarea id="family-support-explanation" name="family-support-explanation" required></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <button type="button" class="cancel-button" onclick="previousStep(4)">Back</button>
+            <button type="button" class="next-button" onclick="nextStep(6)">Next</button>
+        </div>
+    </div>
+
+    <div class="form-section" id="step6">
+    <h3>ADOPTION APPLICATION</h3>
+
+    <div class="form-group">
+        <label for="other-pets">Do you have other pets? <span class="required">*</span></label>
+        <div class="form-options">
+            <label><input type="radio" name="other-pets" value="yes" required> Yes</label>
+            <label><input type="radio" name="other-pets" value="no"> No</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="past-pets">Have you had pets in the past? <span class="required">*</span></label>
+        <div class="form-options">
+            <label><input type="radio" name="past-pets" value="yes" required> Yes</label>
+            <label><input type="radio" name="past-pets" value="no"> No</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p>Please attach photos of your home. This has replaced our on-site ocular inspections.</p>
+        <ol>
+            <li>Front of the house</li>
+            <li>Street photo</li>
+            <li>Living room</li>
+            <li>Dining area</li>
+            <li>Kitchen</li>
+            <li>Bedroom(s) (if your pet will have access)</li>
+            <li>Windows (if adopting a cat)</li>
+            <li>Front & backyard (if adopting a dog)</li>
+        </ol>
+    </div>
+
+    <div class="form-group">
+        <p>We value your privacy. Your photos will not be used for purposes other than this adoption application. <span class="required">*</span></p>
+        <div class="file-upload">
+            <input type="file" id="home-photos" name="home-photos[]" multiple required>
+            <label for="home-photos">Drop file here or <span>Select files</span></label>
+        </div>
+    </div>
+
+    <div class="form-buttons">
+        <button type="button" class="cancel-button" onclick="previousStep(5)">Back</button>
+        <button type="button" class="next-button" onclick="nextStep(7)">Next</button>
+    </div>
+</div>
+
+<div class="form-section" id="step7">
+    <h3>ADOPTION APPLICATION</h3>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="valid-id">Upload a valid ID <span class="required">*</span></label>
+            <p>Below is the list of IDs that you can submit</p>
+            <ul>
+                <li>Driver's License</li>
+                <li>Professional Regulation Commission (PRC) ID</li>
+                <li>Passport</li>
+                <li>SSS ID</li>
+                <li>COMELEC / Voter's ID / COMELEC Registration Form</li>
+                <li>Philippine Identification (PhilID / EPhilID)</li>
+                <li>BIR (TIN)</li>
+                <li>Pag-Ibig ID</li>
+                <li>Barangay ID</li>
+                <li>Philippine Postal ID</li>
+                <li>Phil-Health ID</li>
+            </ul>
+            <input type="file" id="valid-id" name="valid-id" required>
+            <small>Max. file size: 256 MB.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="barangay-clearance">Upload a Barangay Clearance <span class="required">*</span></label>
+            <p>It should be at least one month of the date issue</p>
+            <input type="file" id="barangay-clearance" name="barangay-clearance" required>
+            <small>Max. file size: 256 MB.</small>
+
+            <label for="formal-picture">Upload a Formal Picture <span class="required">*</span></label>
+            <p>It should be clear and file should be formatted as either .jpg or .png</p>
+            <input type="file" id="formal-picture" name="formal-picture" required>
+            <small>Max. file size: 256 MB.</small>
+        </div>
+    </div>
+
+    <div class="form-buttons">
+        <button type="button" class="cancel-button" onclick="previousStep(6)">Back</button>
+        <button type="submit" class="next-button">Submit</button>
+    </div>
+</div>
 
 
 
